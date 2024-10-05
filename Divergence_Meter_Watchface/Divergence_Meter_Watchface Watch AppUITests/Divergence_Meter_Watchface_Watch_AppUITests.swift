@@ -1,6 +1,6 @@
 //
 //  Divergence_Meter_Watchface_Watch_AppUITests.swift
-//  Divergence Meter Watchface Watch AppUITests
+//  Divergence_Meter_Watchface Watch AppUITests
 //
 //  Created by Volkan Pekdas on 05/10/2024.
 //
