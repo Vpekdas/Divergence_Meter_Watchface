@@ -44,10 +44,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DC93D4462CB1BFF60072B7E8 /* Divergence_Meter_Watchface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Divergence_Meter_Watchface.app; path = "/Users/vopekdas/Documents/Divergence_Meter_Watchface/Divergence_Meter_Watchface/build/Debug-iphoneos/Divergence_Meter_Watchface.app"; sourceTree = "<absolute>"; };
-		DC93D4472CB1BFF60072B7E8 /* Divergence_Meter_Watchface Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Divergence_Meter_Watchface Watch AppTests.xctest"; path = "/Users/vopekdas/Documents/Divergence_Meter_Watchface/Divergence_Meter_Watchface/build/Debug-watchos/Divergence_Meter_Watchface Watch App.app/PlugIns/Divergence_Meter_Watchface Watch AppTests.xctest"; sourceTree = "<absolute>"; };
-		DC93D4482CB1BFF60072B7E8 /* Divergence_Meter_Watchface Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Divergence_Meter_Watchface Watch AppUITests.xctest"; path = "/Users/vopekdas/Documents/Divergence_Meter_Watchface/Divergence_Meter_Watchface/build/Debug-watchos/Divergence_Meter_Watchface Watch AppUITests-Runner.app/PlugIns/Divergence_Meter_Watchface Watch AppUITests.xctest"; sourceTree = "<absolute>"; };
-		DCBCAB2D2CB1BE4700A183C9 /* Divergence_Meter_Watchface Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Divergence_Meter_Watchface Watch App.app"; path = "/Users/vopekdas/Documents/Divergence_Meter_Watchface/Divergence_Meter_Watchface/build/Debug-watchos/Divergence_Meter_Watchface Watch App.app"; sourceTree = "<absolute>"; };
+		DC216F192CB45D8F000A3008 /* Divergence_Meter_Watchface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Divergence_Meter_Watchface.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC216F1A2CB45D8F000A3008 /* Divergence_Meter_Watchface Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Divergence_Meter_Watchface Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC216F1B2CB45D8F000A3008 /* Divergence_Meter_Watchface Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Divergence_Meter_Watchface Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC216F1C2CB45D8F000A3008 /* Divergence_Meter_Watchface Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Divergence_Meter_Watchface Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -105,6 +105,10 @@
 				DCBCAAF82CB1B1A600A183C9 /* Divergence_Meter_Watchface Watch AppTests */,
 				DCBCAB022CB1B1A600A183C9 /* Divergence_Meter_Watchface Watch AppUITests */,
 				DC93D47A2CB1C6120072B7E8 /* font */,
+				DC216F192CB45D8F000A3008 /* Divergence_Meter_Watchface.app */,
+				DC216F1A2CB45D8F000A3008 /* Divergence_Meter_Watchface Watch App.app */,
+				DC216F1B2CB45D8F000A3008 /* Divergence_Meter_Watchface Watch AppTests.xctest */,
+				DC216F1C2CB45D8F000A3008 /* Divergence_Meter_Watchface Watch AppUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,7 +131,7 @@
 			packageProductDependencies = (
 			);
 			productName = Divergence_Meter_Watchface;
-			productReference = DC93D4462CB1BFF60072B7E8 /* Divergence_Meter_Watchface.app */;
+			productReference = DC216F192CB45D8F000A3008 /* Divergence_Meter_Watchface.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		DCBCAAE22CB1B1A500A183C9 /* Divergence_Meter_Watchface Watch App */ = {
@@ -150,7 +154,7 @@
 			packageProductDependencies = (
 			);
 			productName = "Divergence_Meter_Watchface Watch App";
-			productReference = DCBCAB2D2CB1BE4700A183C9 /* Divergence_Meter_Watchface Watch App.app */;
+			productReference = DC216F1A2CB45D8F000A3008 /* Divergence_Meter_Watchface Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DCBCAAF42CB1B1A600A183C9 /* Divergence_Meter_Watchface Watch AppTests */ = {
@@ -173,7 +177,7 @@
 			packageProductDependencies = (
 			);
 			productName = "Divergence_Meter_Watchface Watch AppTests";
-			productReference = DC93D4472CB1BFF60072B7E8 /* Divergence_Meter_Watchface Watch AppTests.xctest */;
+			productReference = DC216F1B2CB45D8F000A3008 /* Divergence_Meter_Watchface Watch AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		DCBCAAFE2CB1B1A600A183C9 /* Divergence_Meter_Watchface Watch AppUITests */ = {
@@ -196,7 +200,7 @@
 			packageProductDependencies = (
 			);
 			productName = "Divergence_Meter_Watchface Watch AppUITests";
-			productReference = DC93D4482CB1BFF60072B7E8 /* Divergence_Meter_Watchface Watch AppUITests.xctest */;
+			productReference = DC216F1C2CB45D8F000A3008 /* Divergence_Meter_Watchface Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
