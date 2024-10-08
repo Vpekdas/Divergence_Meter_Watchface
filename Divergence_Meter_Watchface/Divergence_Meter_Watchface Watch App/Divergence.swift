@@ -2,20 +2,36 @@ import Foundation
 import SwiftUI
 
 struct Divergence: View {
-    @State private var currentHour: String = formatTime()
-    @State private var isSpinning: Bool = false
+    @State private var currentHour: String
+    @State private var currentDate: String
+
+    init() {
+        let currentDate = Date()
+        _currentHour = State(initialValue: formatTime(date: currentDate))
+        _currentDate = State(initialValue: formatDate(date: currentDate))
+    }
 
     var body: some View {
-        HStack {
-            ForEach(0 ..< currentHour.count, id: \.self) { index in
-                Text(String(currentHour[currentHour.index(currentHour.startIndex, offsetBy: index)]))
+        VStack {
+            ZStack {
+                Text(currentHour)
+                    .font(Font.custom("BONX-Frame", size: 42.0))
+                    .foregroundStyle(.yellow)
+                Text(currentHour)
+                    .font(Font.custom("BONX-Silhouette", size: 42.0))
+                    .foregroundStyle(.red)
+                    .opacity(0.30)
+                Text(currentHour)
                     .font(Font.custom("BONX-Medium", size: 42.0))
                     .foregroundStyle(.orange)
             }
+            .onAppear {
+                spinDigits(correctChars: currentHour, delay: 0.5)
+            }
         }
-        .onAppear {
-            spinDigits(correctChars: currentHour, delay: 0.5)
-        }
+        Text(currentDate)
+            .font(Font.custom("BONX-Medium", size: 24.0))
+            .foregroundStyle(.orange)
     }
 
     func spinDigits(correctChars: String, delay: TimeInterval) {
@@ -28,6 +44,7 @@ struct Divergence: View {
                 let startIndex = currentHour.index(currentHour.startIndex, offsetBy: index)
                 currentHour.replaceSubrange(startIndex ... startIndex, with: String(randomChar))
             }
+
             timers.append(timer)
 
             DispatchQueue.main.asyncAfter(deadline: .now() + delay * Double(index + 1)) {
@@ -37,6 +54,14 @@ struct Divergence: View {
             }
         }
     }
+}
+
+func formatTime(date: Date) -> String {
+    return date.formatted(.dateTime.hour(.twoDigits(amPM: .omitted)).minute(.twoDigits).second(.twoDigits))
+}
+
+func formatDate(date: Date) -> String {
+    return date.formatted(.dateTime.weekday(.abbreviated).day().month().year())
 }
 
 #Preview {
